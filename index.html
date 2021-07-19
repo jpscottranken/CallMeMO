@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+          content="This website is my interpretation of the existing visitmo.com website">
+    <meta name="keywords" 
+          content="vacation, missouri, mo, show me state">
+    <title>Call Me MO | Home</title>
+    <link rel="stylesheet"  
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="css/styles.css">
+    <link rel="icon" 
+          href="images/map.png" 
+          type="image/png" 
+          sizes="32x32">
+    <script src="js/slideshow.js" 
+          defer></script>
+    <script src="js/scripts.js" 
+          defer></script>
+    <style>
+        h1.mainHeader {
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1>
+                    <a href="index.html">
+                        Call Me <img src="images/map.png" 
+                        alt="map of MO"
+                        id="myFavicon">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mpgeasy.html">MPGEasy</a></li>
+                    <li><a href="mpghard.html">MPGHard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--    Gleaned from the following URL:
+                https://www.w3schools.com/howto/howto_js_slideshow.asp
+        -->
+        <h1 class="mainHeader">Visit MO!!!</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <a href="https://www.nationsonline.org/oneworld/map/USA/missouri_map.htm"
+                   target="_blank">
+                    <img src="images/missouriwelcome.jpg" 
+                         style="width:100%">
+                </a>
+                <div class="text">Welcome To Missouri</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <a href="https://www.gatewayarch.com/"
+                   target="_blank">
+                    <img src="images/stlouisarch.jpg" 
+                     style="width:100%">
+                </a> 
+                <div class="text">The St. Louis Arch</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <a href="https://www.sixflags.com/stlouis/"
+                   target="_blank">
+                    <img src="images/sixflags.jpg" 
+                     style="width:100%">
+                </a> 
+                <div class="text">Six Flags - St. Louis</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <a href="https://www.mlb.com/cardinals/ballpark"
+                   target="_blank">
+                    <img src="images/buschstadium.jpg" 
+                     style="width:100%">
+                </a>
+                <div class="text">Busch Stadium</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <a href="https://www.visithannibal.com/trip-ideas/mark-twains-hannibal/"
+                   target="_blank">
+                    <img src="images/marktwain.jpg" 
+                     style="width:100%">
+                </a>
+                <div class="text">Hannibal MO - Mark Twain</div>
+            </div>
+            
+                <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+   </main>
+
+   <footer id="footer">
+    <p>
+        Call Me MO - &copy; 2021 
+        All Rights Reserved 
+        <span id="span"></span>
+    </p>
+</footer>
+</body>
+</html>

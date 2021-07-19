@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+          content="This website is my interpretation of the existing visitmo.com website">
+    <meta name="keywords" 
+          content="vacation, missouri, mo, show me state">
+    <title>Call Me MO | MPG Hard</title>
+    <link rel="stylesheet"  
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="css/styles.css">
+    <link rel="icon" 
+          href="images/map.png" 
+          type="image/png" 
+          sizes="32x32">
+          <script src="js/mpghard.js" defer></script>
+          <script src="js/scripts.js" defer></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1>
+                    <a href="index.html">
+                        Call Me <img src="images/map.png" 
+                        alt="map of MO"
+                        id="myFavicon">
+                    </a>
+                </h1>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mpgeasy.html">MPGEasy</a></li>
+                    <li><a class="current" href="mpghard.html">MPGHard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>MPG Program - Simple Vanilla JS (DOM)</h1>
+    <main class="jsMPG">
+        <form id="mpg_form" 
+            name="mpg_form" 
+            action="join.html" 
+            method="get"
+            class="jsMPG">
+            <label for="miles_driven">Miles Driven:</label>
+            <input type="text" 
+                id="miles_driven" 
+                name="miles_driven">
+            <span  id="milesDrivenError">*</span><br>
+            
+            <label for="gallons_used">Gallons Used:</label>
+            <input type="text" 
+                id="gallons_used" 
+                name="gallons_used">
+            <span  id="gallonsUsedError">*</span><br>
+            
+            <label for="miles_per_gallon">Miles Per Gallon:</label>
+            <input type="text" 
+                id="miles_per_gallon" 
+                name="miles_per_gallon" 
+                disabled><br>
+            
+            &nbsp;&nbsp;<input type="button" 
+                id="calculate" 
+                name="calculate"
+                value="Calculate MPG"
+                class="btn jsbtn">&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" 
+                id="reset"
+                name="reset" 
+                value="Reset"
+                class="btn jsbtn">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" 
+                id="help" 
+                name="help"
+                value="Help"
+                class="btn jsbtn">
+        </form>
+
+        <div class="clr"></div>
+    </main>
+    
+    <footer id="footer" class="stickyFooter">
+        <p>
+            Call Me MO - &copy; 2021 
+            All Rights Reserved 
+            <span id="span"></span>
+        </p>
+    </footer>
+</body>
+</html>
